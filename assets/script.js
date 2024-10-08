@@ -84,7 +84,7 @@ function NextDot(){
 	while (i < slides.length) {
 		let DotDiv = document.createElement("div")
 		dots.appendChild(DotDiv)
-    if (i == 0) {
+    if (i === 0) {
       DotDiv.classList = "dot dot_selected"
     } else {
       DotDiv.classList = "dot"
@@ -95,7 +95,8 @@ function NextDot(){
 
 // function qui gère les événements et lance les fonctions
 // NextDot, PrevDot et ChangeImgAndText
-
+// Utilisation de onclick dans le HTML 
+/*
 function SelectionFleche(){
 	let flecheGauche = document.querySelector(".arrow_left")
 	let flecheDroite = document.querySelector(".arrow_right")
@@ -108,6 +109,6 @@ function SelectionFleche(){
 		 ChangeImgAndText()
 	  });
   }
-
+*/
 SlideNumber()
-SelectionFleche()
+//SelectionFleche()
